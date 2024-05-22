@@ -35,6 +35,7 @@ Large: 1.8
 - Tints:
 
 - Shades: 
+#96979d;
 
 - Accents:
 
@@ -44,8 +45,8 @@ Large: 1.8
 
 --- 05 BORDER-RADIUS
 
-Default: 9px
-Medium: 11px
+Default: 0.4rem
+Medium: 0.8rem
 */
 
 *,
@@ -86,6 +87,11 @@ img {
 /**************************/
 /* GENRAL REUSABLE COMPONENTS */
 /**************************/
+
+section {
+  position: relative;
+  height: 100vh;
+}
 
 .container-xxl {
   /* 1700px */
@@ -153,10 +159,6 @@ img {
 
 .heading-h1 {
   font-size: 3rem;
-}
-
-.heading-h2 {
-  font-size: 2rem;
 }
 
 .heading-h3 {
