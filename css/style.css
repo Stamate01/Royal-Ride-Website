@@ -5,7 +5,11 @@
 .header {
   height: 100vh;
   position: relative;
-  background-image: linear-gradient(rgba(54, 54, 54, 0.6), rgba(54, 54, 54, 0.6)), url(/img/hero-img.jpg);
+  background-image: linear-gradient(
+      rgba(54, 54, 54, 0.6),
+      rgba(54, 54, 54, 0.6)
+    ),
+    url(/img/hero-img.jpg);
   background-size: cover;
   background-position: center center;
   color: #fff;
@@ -92,7 +96,7 @@
 
 .btn-lg i {
   margin-left: 2rem;
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
 }
 
 .hero-container .heading-h1 {
@@ -158,8 +162,8 @@ hr {
 }
 
 .image-wrapper::after {
-  content: '\f061'; 
-  font-family: 'Line Awesome Free';
+  content: "\f061";
+  font-family: "Line Awesome Free";
   position: absolute;
   display: flex;
   align-items: center;
@@ -190,6 +194,7 @@ hr {
   justify-content: space-between;
   margin-top: 2rem;
   font-size: 2.4rem;
+  font-weight: 500;
 }
 
 .galery-text-car span {
@@ -219,3 +224,31 @@ hr {
 .galery-text-details ul li i {
   font-size: 1.7rem;
 }
+
+/**************************/
+/* WHY US SECTION */
+/**************************/
+
+.why-us-img img {
+  border-radius: 0.8rem;
+  margin-top: 9rem;
+}
+
+.why-us-container {
+  margin-top: 9rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.why-us-container .heading-h3 {
+  color: #000;
+}
+
+.why-us-container .mini-text {
+  margin-top: 1rem;
+}
+
+/* .why-us-container div {
+  max-width: 32rem;
+} */
