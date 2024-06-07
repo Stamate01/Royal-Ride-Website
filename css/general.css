@@ -29,6 +29,7 @@ Large: 1.8
 0.75px
 
 --- 03 COLORS
+#404144  for mini-text
 
 - Primary:
 
@@ -117,6 +118,22 @@ section {
   transition: all 0.6s cubic-bezier(0.6, 0.6, 0, 1);
 }
 
+.btn-yellow {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  background-color: #ccc200;
+  color: #000000;
+  border-radius: 0.4rem;
+  padding: 0.8rem 3rem;
+  overflow: hidden;
+  z-index: 2;
+  transition: all 0.6s cubic-bezier(0.6, 0.6, 0, 1);
+}
+
 .btn-lg {
   display: inline-flex;
   align-items: center;
@@ -147,6 +164,28 @@ section {
   transform: translateY(0%);
 }
 
+.btn-yellow:hover {
+  color: rgb(255, 255, 255);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-yellow .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  z-index: -1;
+  transform: translateY(100%);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-yellow:hover .hover {
+  transform: translateY(0%);
+}
+
 /* Headings */
 .heading-h1,
 .heading-h2,
@@ -160,6 +199,12 @@ section {
 
 .heading-h1 {
   font-size: 3rem;
+}
+
+.heading-h2-black {
+  font-size: 4.4rem;
+  color: #000;
+  margin-bottom: 6.4rem;
 }
 
 .heading-h3 {
