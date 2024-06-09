@@ -30,11 +30,13 @@ Large: 1.8
 
 --- 03 COLORS
 #404144  for mini-text
+#fdf2e9, white
 
 - Primary:
 
 - Tints:
 #ccc200
+#3d3a00
 
 - Shades: 
 #96979d;
@@ -57,6 +59,11 @@ Medium: 0.8rem
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.4rem #8f8800;
 }
 
 html {

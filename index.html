@@ -84,7 +84,7 @@
         <div class="first-car">
           <div class="image-wrapper">
             <img
-              src="img/Ferrari img/ferrari-488-img (1).jpg"
+              src="img/Ferrari-img/ferrari-488-img (1).jpg"
               alt="Ferrari 488"
             />
           </div>
@@ -327,7 +327,7 @@
           <div class="card-body">
             <img src="https://randomuser.me/api/portraits/men/7.jpg" />
             <p class="testimonial-text">
-              <i class="las la-quote-right"></i>Renting from Luxury Wheels was a
+              <i class="las la-quote-right"></i>Renting from Royal Ride was a
               breeze. The car was in pristine condition, and the rental process
               was smooth from start to finish.
             </p>
@@ -353,11 +353,141 @@
       </div>
     </section>
 
-    <!-- CTA SECTION -->
+    <!-- CTA/Consultation Section -->
 
-    <div class="cta"></div>
+    <section class="container-xxl">
+      <div class="cta-container">
+        <div class="cta-text-box">
+          <h2 class="heading-h2-black">First consultation for free!</h2>
+          <p class="cta-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            neque vero repellat consequatur odit eveniet necessitatibus, ab
+            asperiores. Accusamus, architecto.
+          </p>
+
+          <form class="cta-form">
+            <div>
+              <label for="full-name">Full Name</label>
+              <input
+                id="full-name"
+                type="text"
+                placeholder="John Smith"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">Email adress</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="me@example.com"
+                required
+              />
+            </div>
+            <div>
+              <label for="select-where">Where did you hear about us?</label>
+              <select id="select-where" required>
+                <option value="">Please choose one option:</option>
+                <option value="friends">Friends and Family</option>
+                <option value="youtube">YouTube Video</option>
+                <option value="podcast">Podcast</option>
+                <option value="facebook">Facebook</option>
+                <option value="others">Others</option>
+              </select>
+            </div>
+            <button class="btn">Sign Up</button>
+          </form>
+        </div>
+        <div
+          class="cta-img-box"
+          role="img"
+          aria-label="A picture with a ferrari"
+        >
+          Img
+        </div>
+      </div>
+    </section>
 
     <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container-xxl grid-5">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              class="logo"
+              alt="Royal Ride logo"
+              src="img/royalride-logo-black2.png"
+            />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><i class="lab la-instagram social-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><i class="lab la-facebook social-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><i class="lab la-twitter social-icon"></i
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2027</span> by Royal Ride, Inc.
+            All rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">69 Devgasse, 2nd Floor, Vienna AT</p>
+            <p>
+              <a class="footer-link" href="tel:123-200-789">123-200-6399</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@royalride.com"
+                >hello@royalride.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Royal Ride</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Directory </a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
 
     <script src="js/main.js"></script>
   </body>

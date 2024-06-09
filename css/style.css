@@ -354,7 +354,7 @@ i {
   flex-direction: column;
   align-items: center;
   max-width: 40rem;
-  padding: 4rem 0 4rem 0;
+  padding: 4rem 0;
   background-color: #faf9e6;
   border-radius: 0.8rem;
 }
@@ -392,9 +392,171 @@ i {
 /* CTA SECTION */
 /**************************/
 
+.cta-container {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #ccc200;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.8rem;
+
+  background-image: linear-gradient(to left top, #e6e180, #d6ce33);
+  overflow: hidden;
+
+  /* temp */
+  height: 50rem;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #3d3a00;
+}
+
+.cta-text-box .heading-h2-black {
+  color: #3d3a00;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to left top,
+      rgba(230, 225, 128, 0.1),
+      rgba(214, 206, 51, 0.1)
+    ),
+    url("../img/Ferrari-img/ferrari-488-img\ \(5\).jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 0.8rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta-form button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  background-color: #3d3a00;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.cta-form button:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+.cta-form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.4rem #8f8800;
+}
+
 /**************************/
 /* FOOTER SECTION */
 /**************************/
+
+.footer {
+  padding: 9.6rem 0;
+  border-top: 1px solid #eee;
+}
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  font-size: 3rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #000000;
+}
 
 @keyframes fade {
   from {
