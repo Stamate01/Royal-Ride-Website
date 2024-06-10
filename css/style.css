@@ -2,7 +2,7 @@
 /* NAVIGATION */
 /**************************/
 
-.header {
+.header-main {
   height: 100vh;
   position: relative;
   background-image: linear-gradient(
@@ -139,14 +139,18 @@ hr {
 }
 
 .first-car img,
-.second-car img {
+.second-car img,
+.third-car img,
+.fourth-car img {
   border-radius: 0.8rem;
   transition: all 0.4s;
   cursor: pointer;
 }
 
 .first-car img:hover,
-.second-car img:hover {
+.second-car img:hover,
+.third-car img:hover,
+.fourth-car img:hover {
   transform: scale(1.1);
 }
 
@@ -394,7 +398,7 @@ i {
 
 .cta-container {
   max-width: 130rem;
-  margin: 0 auto;
+  margin: 9.6rem auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
   background-color: #ccc200;
@@ -567,4 +571,33 @@ i {
     opacity: 1;
     transform: translateY(0px);
   }
+}
+
+
+
+/**************************/
+/* GALERY NEW PAGE */
+/**************************/
+
+.header-galery {
+  height: 50vh;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(54, 54, 54, 0.6),
+      rgba(54, 54, 54, 0.6)
+    ),
+    url(/img/Ferrari-img/ferrari-488-img\ \(5\).jpg);
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+}
+
+.car-models-h1 {
+  margin-top: 15rem;
+}
+
+.third-car,
+.fourth-car {
+  margin-top: 6rem;
+  margin-bottom: 9.6rem;
 }
