@@ -203,6 +203,16 @@ section {
   line-height: 1.1;
 }
 
+.heading-h1-black,
+.heading-h2-black,
+.heading-h3-black {
+  font-weight: 500;
+  color: #000;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+  line-height: 1.1;
+}
+
 .heading-h1 {
   font-size: 3rem;
 }
@@ -213,9 +223,20 @@ section {
   margin-bottom: 6.4rem;
 }
 
+.heading-h3-black {
+  font-size: 2.4rem;
+}
+
 .heading-h3 {
   font-size: 2.4rem;
   line-height: 1.2;
+}
+
+.mini-text {
+  font-size: 1.6rem;
+  color: #404144;
+  margin-top: 12.8rem;
+  line-height: 1.6;
 }
 
 /* span */

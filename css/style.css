@@ -111,12 +111,6 @@
 /* GALERY SECTION */
 /**************************/
 
-.mini-text {
-  margin-top: 12.8rem;
-  font-size: 1.6rem;
-  color: #404144;
-}
-
 hr {
   margin-top: 4.8rem;
   margin-bottom: 6.4rem;
@@ -433,7 +427,7 @@ i {
       rgba(230, 225, 128, 0.1),
       rgba(214, 206, 51, 0.1)
     ),
-    url("../img/Ferrari-img/ferrari-488-img\ \(5\).jpg");
+    url("../img/Ferrari-img/ferrari-488-img-\(5\).jpg");
   background-size: cover;
   background-position: center;
 }
@@ -468,7 +462,8 @@ i {
   color: #aaa;
 }
 
-.cta-form button {
+.cta-form button,
+.card-body2 button {
   border: none;
   cursor: pointer;
   font-family: inherit;
@@ -478,7 +473,8 @@ i {
   padding: 1.2rem;
 }
 
-.cta-form button:hover {
+.cta-form button:hover,
+.card-body2 button:hover {
   background-color: #fff;
   color: #555;
 }
@@ -573,8 +569,6 @@ i {
   }
 }
 
-
-
 /**************************/
 /* GALERY NEW PAGE */
 /**************************/
@@ -586,7 +580,7 @@ i {
       rgba(54, 54, 54, 0.6),
       rgba(54, 54, 54, 0.6)
     ),
-    url(/img/Ferrari-img/ferrari-488-img\ \(5\).jpg);
+    url(/img/Ferrari-img/ferrari-488-img-\(5\).jpg);
   background-size: cover;
   background-position: center center;
   color: #fff;
@@ -600,4 +594,192 @@ i {
 .fourth-car {
   margin-top: 6rem;
   margin-bottom: 9.6rem;
+}
+
+/**************************/
+/* FERRARI 488 PAGE */
+/**************************/
+
+.header-ferrari,
+.header-bugatti {
+  height: 60vh;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(54, 54, 54, 0.6),
+      rgba(54, 54, 54, 0.6)
+    ),
+    url(/img/Bugatti-img/bugatti-img-\(1\).jpg);
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+}
+
+.header-ferrari {
+  background-image: linear-gradient(
+      rgba(54, 54, 54, 0.6),
+      rgba(54, 54, 54, 0.6)
+    ),
+    url(/img/Ferrari-img/ferrari-488-img-\(4\).jpg);
+}
+
+.car-models-h1 {
+  margin-top: 15rem;
+}
+
+.car-details-grid {
+  margin: 9.6rem auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 6rem;
+}
+
+.car-details-grid .mini-text {
+  margin: 0 auto;
+}
+
+.general-info-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.general-info-icons .las {
+  margin-right: 1rem;
+  font-size: 2rem;
+  background-color: #ccc200;
+  padding: 0.8rem;
+  border-radius: 50%;
+}
+
+.general-info-icons p {
+  font-size: 1.6rem;
+}
+
+.galery-title {
+  margin-top: 10rem;
+}
+
+.gallery-container {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.gallery-container img {
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  opacity: 0.8;
+}
+
+/* LIGHTBOX */
+
+.lightbox {
+  position: fixed;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.lightbox-content {
+  position: relative;
+  width: 65%;
+  height: 65%;
+  margin: 5% auto;
+}
+
+.lightbox-content img {
+  width: 100%;
+  height: 100%;
+  border: 6px solid #fff;
+  object-fit: cover;
+}
+
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 2rem;
+  top: 45%;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.lightbox-prev {
+  left: 6px;
+}
+
+.lightbox-next {
+  right: 6px;
+}
+
+/* CARD */
+
+.card-body2 {
+  max-width: 40rem;
+  padding: 4rem;
+  background-color: #ccc200;
+  border-radius: 0.8rem;
+}
+
+.card-title {
+  position: relative;
+}
+
+.card-title::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid #fff;
+}
+
+.card-title strong {
+  font-size: 3.6rem;
+}
+
+.card-title span {
+  font-size: 1.8rem;
+}
+
+.car-specs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.spec-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.spec-item i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.spec-title {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.spec-value {
+  font-size: 1.6rem;
+}
+
+.card-body2 button {
+  margin-top: 4rem;
 }
