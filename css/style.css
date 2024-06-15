@@ -3,7 +3,6 @@
 /**************************/
 
 .header-main {
-  height: 100vh;
   position: relative;
   background-image: linear-gradient(
       rgba(54, 54, 54, 0.6),
@@ -81,11 +80,10 @@
 /**************************/
 
 .hero-container {
-  height: 75rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  color: #fff;
+  height: 80rem;
 }
 
 .hero-text {
@@ -97,14 +95,6 @@
 .btn-lg i {
   margin-left: 2rem;
   font-size: 2.5rem;
-}
-
-.hero-container .heading-h1 {
-  max-width: 65rem;
-}
-
-.hero-container .hero-mini-container {
-  max-width: 40rem;
 }
 
 /**************************/
@@ -264,10 +254,6 @@ hr {
   margin-bottom: 2rem;
 }
 
-/* .why-us-container div {
-  max-width: 32rem;
-} */
-
 /**************************/
 /* FAQ SECTION */
 /**************************/
@@ -373,7 +359,7 @@ i {
 .testimonial-text {
   font-size: 2rem;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .testimonial-name {
@@ -401,9 +387,6 @@ i {
 
   background-image: linear-gradient(to left top, #e6e180, #d6ce33);
   overflow: hidden;
-
-  /* temp */
-  height: 50rem;
 }
 
 .cta-text-box {

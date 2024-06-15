@@ -1,0 +1,86 @@
+/* rem and em no NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1200PX (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16 = 56.25% */
+    font-size: 56.25%;
+  }
+
+  .why-us-container {
+    gap: 6rem;
+  }
+
+  .btn-yellow {
+    margin-top: 2.5rem;
+  }
+}
+
+/**************************/
+/* BELOW 1000PX () */
+/**************************/
+
+@media (max-width: 62.5em) {
+  .heading-h2-black {
+    margin-bottom: 0.2rem;
+  }
+  .galery-container {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
+
+  .galery-text {
+    margin-bottom: 3.2rem;
+    margin-top: -2rem;
+  }
+
+  .why-us-container {
+    margin-top: 7rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+  .image-wrapper-faq {
+    display: none;
+  }
+
+  .faq {
+    max-width: 110rem;
+  }
+
+  .btn-yellow {
+    margin-top: 7.4rem;
+  }
+
+  .testimonials-container {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+    margin: 6rem auto;
+  }
+
+  .card-body {
+    max-width: 70rem;
+    padding: 4rem;
+  }
+
+  .cta-form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/**************************/
+/* BELOW 700PX () */
+/**************************/
+
+@media (max-width: 43.75em) {
+  .cta-container {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    display: none;
+  }
+}
