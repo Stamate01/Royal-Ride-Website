@@ -83,3 +83,25 @@ function closeLightBox() {
 }
 
 lightBoxContainer.addEventListener("click", closeLightBox);
+
+////Mobile Menu
+const overlay = document.getElementById("overlay");
+const btn = document.getElementById("menu-btn");
+const menu = document.getElementById("mobile-menu");
+
+btn.addEventListener("click", navToggle);
+overlay.addEventListener("click", closeMenu);
+
+function navToggle() {
+  btn.classList.toggle("open");
+  overlay.classList.toggle("overlay-show");
+  document.documentElement.classList.toggle("stop-scrolling");
+  menu.classList.toggle("show-menu");
+}
+
+function closeMenu() {
+  btn.classList.remove("open");
+  overlay.classList.remove("overlay-show");
+  document.documentElement.classList.remove("stop-scrolling");
+  menu.classList.remove("show-menu");
+}
