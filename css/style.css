@@ -486,6 +486,7 @@ i {
 .grid-5 {
   display: grid;
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  gap: 3rem;
 }
 
 .logo-col {
@@ -621,6 +622,11 @@ i {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 6rem;
+}
+
+.car-details-grid .heading-h3-black {
+  margin-bottom: 4rem;
+  font-size: 3rem;
 }
 
 .car-details-grid .mini-text {

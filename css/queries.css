@@ -65,9 +65,29 @@
     padding: 4rem;
   }
 
+  .cta-text {
+    margin-top: 2rem;
+  }
+
   .cta-form {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  /* GALERY CARS PAGE */
+
+  .first-car,
+  .second-car,
+  .third-car,
+  .fourth-car {
+    margin-top: 0rem;
+    margin-bottom: 3.2rem;
+  }
+
+  /* FERRARI 488 PAGE */
+
+  .car-details-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -76,6 +96,10 @@
 /**************************/
 
 @media (max-width: 47em) {
+  .heading-h1 {
+    font-size: 2.2rem;
+  }
+
   .cta-container {
     grid-template-columns: 1fr;
   }
@@ -210,5 +234,73 @@
 
   .mobile-main-menu ul li a:hover {
     color: #3d3a00;
+  }
+
+  /* FOOTER SECTION */
+
+  .grid-5 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+    margin-top: 4.8rem;
+  }
+
+  /* FERRARI 488 PAGE */
+
+  .car-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-body2 {
+    max-width: 80rem;
+    padding: 6rem;
+  }
+}
+
+/**************************/
+/* BELOW 500PX () */
+/**************************/
+@media (max-width: 31.25em) {
+  .heading-h1 {
+    font-size: 1.8rem;
+  }
+
+  .heading-h2-black {
+    font-size: 3rem;
+  }
+
+  .galery-text {
+    font-size: 1.8rem;
+  }
+
+  .galery-text-details ul {
+    font-size: 1.4rem;
+  }
+
+  .galery-text-details {
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+  }
+
+  .why-us-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+  .cta-text {
+    font-size: 1.6rem;
   }
 }
