@@ -6,7 +6,7 @@ faqs.forEach((faq) => {
   });
 });
 
-///LightBox
+//LightBox
 
 const galleryItem = document.getElementsByClassName("gallery-item");
 //create element for lightbox
@@ -84,7 +84,7 @@ function closeLightBox() {
 
 lightBoxContainer.addEventListener("click", closeLightBox);
 
-////Mobile Menu
+//Mobile Menu
 const overlay = document.getElementById("overlay");
 const btn = document.getElementById("menu-btn");
 const menu = document.getElementById("mobile-menu");

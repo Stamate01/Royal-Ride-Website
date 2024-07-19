@@ -1,4 +1,4 @@
-/* rem and em no NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
 
 /**************************/
 /* BELOW 1200PX (Landscape Tablets) */
@@ -92,7 +92,7 @@
 }
 
 /**************************/
-/* BELOW 750PX () */
+/* BELLOW 750PX () */
 /**************************/
 
 @media (max-width: 47em) {
